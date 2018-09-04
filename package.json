@@ -1,0 +1,65 @@
+{
+  "name": "emg",
+  "version": "0.1.0",
+  "description": "a simple, enhanced react image component with loading spinner, fallback support and others.",
+  "author": "wayou",
+  "main": "dist/emg.cjs.js",
+  "types": "dist/emg.d.ts",
+  "module": "dist/emg.esm.js",
+  "browser": "dist/emg.umd.js",
+  "keywords": [
+    "image",
+    "react",
+    "component",
+    "lazy-load"
+  ],
+  "devDependencies": {
+    "@ampproject/rollup-plugin-closure-compiler": "^0.6.1",
+    "@types/expect-puppeteer": "^2.2.4",
+    "@types/jest": "^23.3.1",
+    "@types/jest-environment-puppeteer": "^2.2.1",
+    "@types/puppeteer": "^1.6.1",
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.5.0",
+    "jest-dev-server": "^3.3.0",
+    "jest-puppeteer": "^3.3.1",
+    "node-sass": "^4.9.3",
+    "puppeteer": "^1.7.0",
+    "rollup": "^0.65.0",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-postcss": "^1.6.2",
+    "rollup-plugin-typescript2": "^0.17.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "scripts": {
+    "build": "rm -rf dist && rollup -c",
+    "dev": "rollup -c -w",
+    "pub": "npm run lint && npm run build && npm publish",
+    "lint": "tslint --project ./ && stylelint \"./src/**/*.scss\"",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wayou/toos",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wayou/toos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wayou/toos/issues",
+    "email": "liuwayong@gmail.com"
+  },
+  "peerDependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}

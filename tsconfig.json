@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "esnext",
+    "jsx": "react",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "rootDirs": ["src", "test"],
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "declaration": true
+  },
+  "exclude": [
+    "examples",
+    "dist",
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}
