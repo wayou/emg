@@ -6,7 +6,7 @@ emg
 [![npm package](https://img.shields.io/npm/dt/emg.svg)](https://www.npmjs.com/package/emg)
 
 
-a simple, enhanced react image component with loading spinner, fallback support and others.
+A simple, enhanced react image component with loading spinner, fallback support and others.
 
 
 ### Examples
@@ -16,7 +16,10 @@ see the [examples](./examples)
 
 ### Features
 
-- 
+- lazy loading
+- loading indicator
+- error handler and fallback placeholder
+
 
 ### Installing
 
@@ -68,11 +71,34 @@ class Example extends React.Component{
   - type: `string`
 - isLazyLoad: whether lazy load or not. enable only when `IntersectionObserver` is supported
   - type: `boolean`
+  - default: `false`
 - onLoad: `onload` handler
   - type: `(event: Event) => void`
 - onError: `onerror` handler
   - type: `(event: Event) => void`
 
+
+### Development
+
+For development, clone this repo then
+
+```bash
+$ yarn install && yarn start
+```
+
+this will start a local server then open browser and go to `http://localhost:3000` to see examples in action.
+
+available scripts:
+
+- `build`: generate budnles that are ready to publish
+- `dev`: start local server for local development
+- `lint`: run tslint & stylelint
+
+
+### TODO
+
+- [ ] add test, unit and e2e
+- [ ] dont bail on warning
 
 
 ### Acknowledgement
@@ -83,8 +109,4 @@ Lazy load using the modern [`IntersectionObserver`](https://developers.google.co
 
 For more info you can read [
 Lazy Loading Images and Video](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/#lazy_loading_images) from WebFundamentals.
-
-
-
-
 

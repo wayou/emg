@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "esnext",
+    "module": "es2015",
     "jsx": "react",
     "target": "es5",
     "lib": ["es6", "dom"],
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "rootDirs": ["src", "test"],
+    "sourceMap": true, // also enalbe rollup.output.sourcemap to get sourcemap work
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -18,7 +17,7 @@
     "declaration": true
   },
   "exclude": [
-    "examples",
+    "examples", // exclude example directory when generating publish files
     "dist",
     "node_modules",
     "build",

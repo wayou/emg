@@ -7,7 +7,10 @@
  */
 
 import * as React from "react";
-import "./img.scss";
+import "./emg.scss";
+
+import LOAD_ERR_IMG from "./images/load_err.png";
+import LOADING_IMG from "./images/loading.png";
 
 interface IEmgProps {
   className?: string;
@@ -57,8 +60,8 @@ class Emg extends React.Component<IEmgProps, IEmgState> {
   public static defaultProps: Partial<IEmgProps> = {
     className: "",
     alt: "",
-    loadingImg: require("./images/img_loading.png"),
-    loadErrImg: require("./images/img_load_err.png"),
+    loadingImg: LOADING_IMG,
+    loadErrImg: LOAD_ERR_IMG,
     fallbackImg: "",
     isLazyLoad: true,
   };
@@ -93,7 +96,7 @@ class Emg extends React.Component<IEmgProps, IEmgState> {
     const classNames = this.getClassName(className, isLoading, isLoadSuccess);
     return (
       <img
-        ref={ref => {
+        ref={(ref) => {
           this.imageElement = ref as HTMLImageElement;
         }}
         className={classNames}
@@ -169,8 +172,8 @@ class Emg extends React.Component<IEmgProps, IEmgState> {
 
     // TODO: performace test with large number of images
     if ("IntersectionObserver" in window) {
-      const lazyImageObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
+      const lazyImageObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const lazyImage = entry.target as HTMLImageElement;
             this.loadImg(this.props.src);
