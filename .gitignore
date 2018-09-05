@@ -11,3 +11,7 @@ docs
 
 # rollup-plugin-typescript2 cache files
 .rpt2_cache
+
+# example bundles
+**/examples.bundle.js
+**/examples.bundle.js.map

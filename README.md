@@ -11,8 +11,17 @@ A simple, enhanced react image component with loading spinner, fallback support 
 
 ### Examples
 
-see the [examples](./examples)
+See the [examples](./examples)
 
+#### run the example
+
+clone this repo then:
+
+```bash
+$ yarn install && yarn start
+```
+
+navigate to http://localhost:3000
 
 ### Features
 
