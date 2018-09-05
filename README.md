@@ -41,11 +41,11 @@ Using cdn:
 ### Usage
 
 ```js
-import Emg as Img from 'emg';
+import Emg from 'emg';
 
 class Example extends React.Component{
   public render(){
-    return <Img src="url/for/image"/>
+    return <Emg src="url/for/image"/>
   }
 }
 ```
