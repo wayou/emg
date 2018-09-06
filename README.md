@@ -105,11 +105,6 @@ available scripts:
 - `test`: test the component
 
 
-### TODO
-
-- [ ] dont bail on warning
-
-
 ### Acknowledgement
 
 #### Lazy load

@@ -3,6 +3,7 @@
   "extends": ["tslint:recommended"],
   "jsRules": {},
   "rules": {
+    "no-unused-expression": true,
     "no-var-requires": false,
     "object-literal-sort-keys": false,
     "no-string-literal": false
