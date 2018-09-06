@@ -1,6 +1,6 @@
 import * as React from "react";
 import { create } from "react-test-renderer";
-import Emg from "./emg";
+import Emg from "../src/emg";
 import ExampleImg from "./images/example.png";
 
 test("image should rendered", () => {

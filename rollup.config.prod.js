@@ -57,7 +57,7 @@ export default [
         clean: true,
         tsconfigOverride: {
           // NOTE: exclude to avoid unwanted files generated for publishing
-          exclude: ["examples"],
+          exclude: ["examples", "__mocks__", "__tests__"],
         },
       }),
     ],
