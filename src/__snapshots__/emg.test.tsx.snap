@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`image should rendered 1`] = `
+<img
+  alt=""
+  className="image  image-loading"
+/>
+`;

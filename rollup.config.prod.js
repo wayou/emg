@@ -55,6 +55,10 @@ export default [
       }),
       tsplugin({
         clean: true,
+        tsconfigOverride: {
+          // NOTE: exclude to avoid unwanted files generated for publishing
+          exclude: ["examples"],
+        },
       }),
     ],
   },

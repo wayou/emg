@@ -62,28 +62,28 @@ class Example extends React.Component{
 
 ### Options
 
-- className: class name
+- `className`: class name
   - type: `string`
-- src: url of the image to load 
+- `src`: url of the image to load 
   - type: `string`
-- alt: alt for the image 
+- `alt`: alt for the image 
   - type: `string`
-- title: title attribute for the image
+- `title`: title attribute for the image
   - type: `string`
-- style: inline style for the image
+- `style`: inline style for the image
   - type: `React.CSSProperties`
-- loadingImg: show while image loading
+- `loadingImg`: show while image loading
   - type: `string`
-- loadErrImg: show when failed to load the image
+- `loadErrImg`: show when failed to load the image
   - type: `string`
-- fallbackImg: instead of showing an error image, show this fallback one
+- `fallbackImg`: instead of showing an error image, show this fallback one
   - type: `string`
-- isLazyLoad: whether lazy load or not. enable only when `IntersectionObserver` is supported
+- `isLazyLoad`: whether lazy load or not. enable only when `IntersectionObserver` is supported
   - type: `boolean`
   - default: `false`
-- onLoad: `onload` handler
+- `onLoad`: `onload` handler
   - type: `(event: Event) => void`
-- onError: `onerror` handler
+- `onError`: `onerror` handler
   - type: `(event: Event) => void`
 
 
@@ -95,18 +95,18 @@ For development, clone this repo then
 $ yarn install && yarn start
 ```
 
-this will start a local server then open browser and go to `http://localhost:3000` to see examples in action.
+this will start a local server then open browser and go to http://localhost:3000 to see examples in action.
 
 available scripts:
 
 - `build`: generate budnles that are ready to publish
 - `dev`: start local server for local development
 - `lint`: run tslint & stylelint
+- `test`: test the component
 
 
 ### TODO
 
-- [ ] add test, unit and e2e
 - [ ] dont bail on warning
 
 

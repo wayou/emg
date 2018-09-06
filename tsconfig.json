@@ -17,7 +17,12 @@
     "declaration": true
   },
   "exclude": [
-    "examples", // exclude example directory when generating publish files
+    // NOTE: ignore examples directory or it will generate unwanted files for publishing
+    // But we can't ignore it here, or ts will fail to resolve modules of the example files
+    // e.g. `[ts] Cannot find module './images/fallback_img.jpg'.`
+    // As a workaround, we exclude `examples` in `rollup.config.prod.js`
+    // with the ts configuration of `rollup-plugin-typescript2`
+    // "examples",
     "dist",
     "node_modules",
     "build",
