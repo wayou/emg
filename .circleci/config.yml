@@ -5,6 +5,9 @@
 version: 2
 jobs:
   build:
+    filters:
+      branches:
+        only: master
     docker:
       # specify the version you desire here
       - image: circleci/node:10.9.0
@@ -36,5 +39,5 @@ jobs:
       - run: git config --global user.email "liuwayong@example.com"
       - run: git config --global user.name "wayou"
       - run: git add -A && git diff-index --quiet HEAD || git commit -m "gen dist via circle ci [skip ci]"
-      - run: git push origin master
+      - run: git push origin HEAD
       - run: yarn storybook:deploy
