@@ -35,6 +35,6 @@ jobs:
 
       - run: git config --global user.email "liuwayong@example.com"
       - run: git config --global user.name "wayou"
-      - run: git add -A && git commit -m "gen dist via circle ci [skip ci]" | true
-      - run: git push origin master | true
+      - run: git add -A && git diff-index --quiet HEAD || git commit -m "gen dist via circle ci [skip ci]"
+      - run: git push origin master
       - run: yarn storybook:deploy
