@@ -8,6 +8,7 @@ coverage
 compiled
 .awcache
 docs
+.out
 
 # rollup-plugin-typescript2 cache files
 .rpt2_cache
