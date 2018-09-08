@@ -83,5 +83,8 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "storybook-deployer": {
+    "commitMessage": "Deploy Storybook [skip ci]"
+  }
 }
