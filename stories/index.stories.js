@@ -41,4 +41,21 @@ storiesOf("Emg", module)
         }}
       />
     );
+  })
+
+  .add("lazy load", () => {
+    return (
+      <div>
+        <p style={{ marginBottom: "1000px" }}>scroll down to see the lazy loading in action</p>
+        <Emg src={TEST_IMG_URL} />
+      </div>
+    );
+  })
+
+  .add("with inline style", () => {
+    return (
+      <div>
+        <Emg src={TEST_IMG_URL} style={{border:'2px solid red'}}/>
+      </div>
+    );
   });
