@@ -1,7 +1,7 @@
 {
   "name": "emg",
   "version": "0.1.0",
-  "description": "a simple, enhanced react image component with loading spinner, fallback support and others.",
+  "description": "a simple, enhanced react image component with loading spinner, fallback support and other features",
   "author": "wayou",
   "main": "dist/emg.cjs.js",
   "types": "dist/emg.d.ts",
@@ -64,7 +64,7 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "storybook:gen": "build-storybook -c .storybook -o .out",
-    "storybook:deploy": "storybook-to-ghpages"
+    "storybook:deploy": "storybook-to-ghpages -- --ci"
   },
   "files": [
     "dist"

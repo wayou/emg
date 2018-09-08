@@ -1,12 +1,13 @@
 emg
 ===
 
+[![CircleCI](https://circleci.com/gh/wayou/emg.svg?style=svg)](https://circleci.com/gh/wayou/emg)
 [![MIT LICENSE](https://img.shields.io/github/license/wayou/emg.svg)](./LICENSE)
 [![npm package](https://img.shields.io/npm/v/emg.svg)](https://www.npmjs.com/package/emg)
 [![npm package](https://img.shields.io/npm/dt/emg.svg)](https://www.npmjs.com/package/emg)
 
 
-A simple, enhanced react image component with loading spinner, fallback support and others.
+A simple, enhanced react image component with loading spinner, fallback support and other features
 
 ### Features
 
