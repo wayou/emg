@@ -8,21 +8,6 @@ emg
 
 A simple, enhanced react image component with loading spinner, fallback support and others.
 
-
-### Examples
-
-See the [examples](./examples)
-
-#### run the example
-
-clone this repo then:
-
-```bash
-$ yarn install && yarn start
-```
-
-navigate to http://localhost:3000
-
 ### Features
 
 - lazy loading
@@ -85,6 +70,21 @@ class Example extends React.Component{
   - type: `(event: Event) => void`
 - `onError`: `onerror` handler
   - type: `(event: Event) => void`
+
+
+### Examples
+
+See the [examples](./examples)
+
+#### run the example
+
+clone this repo then:
+
+```bash
+$ yarn install && yarn start
+```
+
+navigate to http://localhost:3000
 
 
 ### Development

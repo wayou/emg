@@ -5,7 +5,7 @@ import postcss from "rollup-plugin-postcss";
 import resolve from "rollup-plugin-node-resolve";
 import serve from "rollup-plugin-serve";
 import tsplugin from "rollup-plugin-typescript2";
-import image from "rollup-plugin-img";
+import image from "rollup-plugin-inline-image";
 
 export default {
   input: "./examples/examples.tsx",
@@ -23,9 +23,7 @@ export default {
     // replace({
     //   "process.env.NODE_ENV": JSON.stringify("development"),
     // }),
-    image({
-      limit: 10 * 1024,
-    }),
+    image(),
     resolve(),
     commonjs({
       // NOTE: this need react, react-dom been install into the dependency section in `package.json`, or rollup won't find the two libs
