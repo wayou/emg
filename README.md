@@ -78,7 +78,7 @@ class Example extends React.Component{
 See the [examples](https://wayou.github.io/emg/index.html).
 
 
-#### run the example
+#### Run the example
 
 clone this repo then:
 
