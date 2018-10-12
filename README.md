@@ -26,7 +26,7 @@ $ yarn add emg
 $ npm i -S emg
 ```
 
-Using cdn:
+Using CDN:
 
 ```html
 <script src="//unpkg.com/emg/dist/emg.umd.js"></script>
@@ -78,7 +78,7 @@ class Example extends React.Component{
 See the [examples](https://wayou.github.io/emg/index.html).
 
 
-#### Run the example
+#### Run the examples
 
 clone this repo then:
 
