@@ -134,8 +134,8 @@ class Emg extends React.Component<IEmgProps, IEmgState> {
       isLoading
         ? IMAGE_CLASS_NAMES.IMAGE_LOADING
         : isLoadSuccess
-          ? IMAGE_CLASS_NAMES.IMAGE_LOAD_SUCCESS
-          : IMAGE_CLASS_NAMES.IMAGE_LOAD_ERR,
+        ? IMAGE_CLASS_NAMES.IMAGE_LOAD_SUCCESS
+        : IMAGE_CLASS_NAMES.IMAGE_LOAD_ERR,
     ].join(" ");
   }
 
@@ -183,6 +183,8 @@ class Emg extends React.Component<IEmgProps, IEmgState> {
       });
 
       lazyImageObserver.observe(imageElement);
+    } else {
+      this.loadImg(this.props.src);
     }
   }
 

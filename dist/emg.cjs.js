@@ -180,6 +180,9 @@ var Emg = /** @class */ (function (_super) {
             });
             lazyImageObserver_1.observe(imageElement);
         }
+        else {
+            this.loadImg(this.props.src);
+        }
     };
     Emg.prototype.loadImg = function (src) {
         var loader = new Image();
